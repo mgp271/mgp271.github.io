@@ -1,0 +1,89 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+html {
+    // scroll-behavior: smooth;
+}
+
+#root {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    font-family: $brand-primary-font;
+    font-size: 16px;
+    color: $body-color;
+    line-height: 1.42857143;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+    color: $brand-secondary;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h3 {
+    color: $brand-secondary;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.btn {
+    text-decoration: none;
+    margin-top: 30px;
+    display: flex;
+    font-family: $brand-primary-font;
+}
+
+.btn-primary {
+    background-color: $brand-secondary;
+    font-family: $brand-primary-font;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border: 2px solid $brand-secondary;
+    outline: 0;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.7);
+    transition: .3s ease all;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        background-color: lighten($brand-secondary, 10%);
+        border: 2px solid lighten($brand-secondary, 10%);
+        text-decoration: none;
+    }
+}
+
+.spinner, .lazyload-placeholder {
+	pointer-events: none;
+	width: 2.5em;
+	height: 2.5em;
+	border: 0.4em solid transparent;
+	border-color: #eee;
+	border-top-color: $brand-primary;
+	border-radius: 50%;
+    animation: loadingspin 1s linear infinite;
+    position: relative;
+    margin: 0 auto;
+}
+
+@keyframes loadingspin {
+	100% {
+			transform: rotate(360deg)
+	}
+}

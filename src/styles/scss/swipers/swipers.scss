@@ -1,0 +1,181 @@
+.swiper {
+
+    &--2 {
+        .slide {
+            display: flex;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            align-items: flex-start;
+            justify-content: center;
+            height: 260px;
+            cursor: pointer;
+
+            &:hover, &:focus {
+                .description-wrapper {
+                    background-color: rgba(#fff, 0.35);
+                }
+            }
+        }
+        .description-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin-top: auto;
+            transition: .3s ease all;        
+
+            .description-inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $brand-primary;
+                width: 100%;
+                height: 60px;
+                margin-top: auto;
+
+                h3 {
+                    color: $body-color;
+                    font-size: 0.875em;
+                    font-weight: bold;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        background-color: $brand-primary;
+        width: 45px;
+        height: 108px;
+        left: 0px;
+        &:after {
+            content: '';
+        }
+        .icon-prev {
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='306px' height='306px' viewBox='0 0 306 306' enable-background='new 0 0 306 306' xml:space='preserve'%3E%3Cg%3E%3Cg id='chevron-right'%3E%3Cpolygon fill='%231D1E20' points='211.648,306 247.35,270.3 130.049,153 247.35,35.7 211.648,0 58.65,153 '/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .swiper-button-next {
+        background-color: $brand-primary;
+        width: 45px;
+        height: 108px;
+        right: 0px;
+        &:after {
+            content: '';
+        }
+        .icon-next {
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='306px' height='306px' viewBox='0 0 306 306' enable-background='new 0 0 306 306' xml:space='preserve'%3E%3Cg%3E%3Cg id='chevron-right'%3E%3Cpolygon fill='%231D1E20' points='94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153 '/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 300px;
+        display: flex;
+        max-width: 1140px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 20px;
+
+        @media (max-width: 768px) {
+            bottom: 230px;
+        }
+        @media (max-width: 480px) {
+            bottom: 250px;
+        }
+        @media (max-width: 320px) {
+            bottom: 270px;
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 100px;
+        border-radius: 0px;
+        background: $brand-primary;
+
+        @media (max-width: 768px) {
+            width: 50px;
+        }
+    }
+
+    .slide {
+        position: relative;
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+
+        @media (max-width: 768px) {
+            height: 600px;
+        }
+
+        .swiper-lazy-preloader-green {
+            pointer-events: none;
+            width: 2.5em;
+            height: 2.5em;
+            border: 0.4em solid transparent;
+            border-color: #eee;
+            border-top-color: $brand-primary;
+            border-radius: 50%;
+            animation: loadingspin 1s linear infinite;
+
+            @keyframes loadingspin {
+                100% {
+                    transform: rotate(360deg)
+                }
+            }
+        }
+
+        .content-wrapper {
+            background-color: rgba(0, 0, 0, .35);
+            width: 100%;
+            height: 100%;
+
+            .content {
+                width: 100%;
+                max-width: 1140px;
+                margin: 250px auto 0;
+
+                @media (max-width: 768px) {
+                    margin: 220px auto 0;
+                }
+                
+                @media (max-width: 480px) {
+                    margin: 180px auto 0;
+                }
+
+                @media (max-width: 320px) {
+                    margin: 130px auto 0;
+                }
+
+                .inner {
+                    max-width: 500px;
+                    padding: 0 20px;
+
+                    h3 {
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    p {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+}

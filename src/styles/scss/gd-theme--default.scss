@@ -1,0 +1,38 @@
+/*=========================
+  _____ _____
+ / ____|  __ \
+| |  __| |  | |
+| | |_ | |  | |
+| |__| | |__| |
+ \_____|_____/
+                    
+Theme: Green Demon
+Created: 7.16.2020
+Organization: Green Demon
+Setup: Matt Page
+==========================*/
+
+/*=== Theme Variables ===*/
+@import "variables/gd-theme--variables";
+@import "variables/colors";
+
+/*=== Theme Defaults ===*/
+@import "defaults/global";
+
+/*=== Headers ===*/
+@import "headers/header";
+
+/*=== Sections ===*/
+@import "sections/hero";
+@import "sections/home-content";
+@import "sections/store-content";
+@import "sections/about-content";
+@import "sections/faq-content";
+@import "sections/top-sellers";
+@import "sections/recently-updated";
+
+/*=== Swipers ===*/
+@import "swipers/swipers";
+
+/*=== Footers ===*/
+@import "footers/footer";

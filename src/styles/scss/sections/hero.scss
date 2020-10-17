@@ -1,0 +1,14 @@
+.hero {
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.hero-swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+    @media (max-width: 768px) {
+        height: 600px;
+    }
+}

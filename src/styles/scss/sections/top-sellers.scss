@@ -1,0 +1,81 @@
+.top-sellers {
+    background-color: #fff;
+    display: flex;
+    padding: 60px 20px 100px;
+
+    .inner {
+        max-width: 1140px;
+        margin: 0 auto;
+        width: 100%;
+
+        h3 {
+            padding: 0 20px;
+
+            @media (max-width: 1200px) {
+                padding: 0px;
+            }
+        }
+
+        .grid {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1140px;
+            padding: 0 12px;
+
+            @media (max-width: 1200px) {
+                padding: 0px;
+            }
+
+            .box {
+                background-color: $brand-secondary;
+                min-height: 160px;
+                width: 358px;
+                margin: 7.5px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                transition: .3s ease all;
+                margin-bottom: 40px;
+
+                &:hover, &:focus {
+                    box-shadow: 10px 10px 20px 0 rgba(0,0,0,.7);
+                }
+
+                @media (max-width: 1200px) {
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    min-height: 260px;
+                }
+
+                .block-image {
+                    min-height: 160px;
+                    background-size: cover;
+                    background-position: top center;
+                    background-repeat: no-repeat;
+
+                    @media (max-width: 1200px) {
+                        min-height: 260px;
+                    }
+                }
+
+                .content {
+                    background-color: #fff;
+                    margin-top: auto;
+                    padding: 20px;
+
+                    .title {
+                        margin-bottom: 5px;
+                    }
+                    .price {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
