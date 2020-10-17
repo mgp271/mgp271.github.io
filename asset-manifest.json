@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b14285f6.chunk.css",
+    "main.js": "/static/js/main.c8e0ccbf.chunk.js",
+    "main.js.map": "/static/js/main.c8e0ccbf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3127bc2d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3127bc2d.js.map",
+    "static/css/2.787a0b37.chunk.css": "/static/css/2.787a0b37.chunk.css",
+    "static/js/2.1257f849.chunk.js": "/static/js/2.1257f849.chunk.js",
+    "static/js/2.1257f849.chunk.js.map": "/static/js/2.1257f849.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f4324487cd66145e559c1a3577253e9e.js": "/precache-manifest.f4324487cd66145e559c1a3577253e9e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.787a0b37.chunk.css.map": "/static/css/2.787a0b37.chunk.css.map",
+    "static/css/main.b14285f6.chunk.css.map": "/static/css/main.b14285f6.chunk.css.map",
+    "static/js/2.1257f849.chunk.js.LICENSE.txt": "/static/js/2.1257f849.chunk.js.LICENSE.txt",
+    "static/media/fortnite.jpg": "/static/media/fortnite.d9675d3c.jpg",
+    "static/media/ghostrunner.jpg": "/static/media/ghostrunner.651f78dd.jpg",
+    "static/media/logo-mobile.svg": "/static/media/logo-mobile.604f0a8c.svg",
+    "static/media/logo.svg": "/static/media/logo.6217c48c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3127bc2d.js",
+    "static/css/2.787a0b37.chunk.css",
+    "static/js/2.1257f849.chunk.js",
+    "static/css/main.b14285f6.chunk.css",
+    "static/js/main.c8e0ccbf.chunk.js"
+  ]
+}
